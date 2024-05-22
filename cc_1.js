@@ -1,4 +1,4 @@
-function CalcTip(c,i,g,nx) {
+function calcTip(c,i,g,nx) {
         const tip = c+i+g+nx;
         console.log(`Total Tip: ${tip}`);
   }
@@ -8,4 +8,4 @@ const i = 23
 const g = 120
 const nx = -12
 
-tipCalc(c,i,g,nx);
+calcTip(c,i,g,nx);
