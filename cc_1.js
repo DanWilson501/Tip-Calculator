@@ -3,7 +3,9 @@ function calcTip(bills) {
   return tip
 }
 
-const bills = [275,40,430]
-const tips = [calcTip(bills[0]), calcTip(bills[1]),calcTip(bills[2])]
-
-console.log(`The bill is ${bills}, the tip is ${tips}, the total is ${bills + tips}`);
+const bills = [275,40,430];
+bills.forEach(bill => {
+    const tip = calcTip(bill);
+    const total = bill + tip;
+    console.log(`The bill is ${bill}, the tip is ${tip}, the total is ${total}`)
+});
